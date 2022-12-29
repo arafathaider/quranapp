@@ -67,7 +67,7 @@ import axios from 'axios'
       },
       querySpecificSura (suraNumber) {
         this.loading = true;
-        axios.get('http://api.alquran.cloud/v1/surah/' + suraNumber)
+        axios.get('https://api.alquran.cloud/v1/surah/' + suraNumber)
      .then(response => { 
       console.log(response.data.data) ;   
       this.currentSura = response.data.data
